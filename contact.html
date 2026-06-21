@@ -235,46 +235,83 @@
       </div>
     </section>
 
-    <!-- MAP / LOCATION SECTION -->
-    <section style="background-color: var(--cream-dark); padding: 80px 48px;">
-      <div style="max-width: var(--max-width); margin: 0 auto;">
-        <p class="section-label fade-in">Find Us</p>
-        <h2 style="font-family: var(--font-serif); font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 700; margin-bottom: 32px;" class="fade-in fade-in-delay-1">
-          Our <span class="serif-italic">location.</span>
-        </h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; align-items: start;" class="fade-in fade-in-delay-2">
-          <div>
-            <p style="font-family: var(--font-sans); font-size: 0.6rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Head Office</p>
-            <p style="font-family: var(--font-sans); font-size: 0.92rem; font-weight: 300; color: var(--text-muted); line-height: 1.85;">
+    <!-- LOCATION SECTION -->
+    <section class="contact-location">
+      <div class="contact-location__inner">
+
+        <div class="contact-location__header">
+          <p class="section-label fade-in">Find Us</p>
+          <h2 class="contact-location__heading fade-in fade-in-delay-1">
+            Our <span class="serif-italic">locations.</span>
+          </h2>
+          <p class="contact-location__sub fade-in fade-in-delay-2">
+            Visit our head office or the columbarium development site in the heart of Ipoh, Perak.
+          </p>
+        </div>
+
+        <div class="contact-location__grid">
+
+          <article class="location-card fade-in fade-in-delay-2">
+            <div class="location-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+              </svg>
+            </div>
+            <p class="location-card__label">Head Office</p>
+            <h3 class="location-card__title">OPL Synergy</h3>
+            <address class="location-card__address">
               K292 Jalan Bendahara<br>
               31650 Ipoh, Perak Darul Ridzuan<br>
               Malaysia
-            </p>
-            <p style="font-family: var(--font-sans); font-size: 0.6rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-top: 28px; margin-bottom: 10px;">Project Site</p>
-            <p style="font-family: var(--font-sans); font-size: 0.92rem; font-weight: 300; color: var(--text-muted); line-height: 1.85;">
+            </address>
+            <a
+              href="https://maps.google.com/?q=K292+Jalan+Bendahara+Ipoh+Perak+Malaysia"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="location-card__link"
+            >
+              Get Directions &nbsp;→
+            </a>
+          </article>
+
+          <article class="location-card fade-in fade-in-delay-3">
+            <div class="location-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+              </svg>
+            </div>
+            <p class="location-card__label">Project Site</p>
+            <h3 class="location-card__title">Ipoh City Columbarium</h3>
+            <address class="location-card__address">
               Off Jalan Bendahara<br>
               Ipoh, Perak Darul Ridzuan<br>
               Malaysia
-            </p>
-            <div style="margin-top: 32px;">
-              <a href="https://maps.google.com/?q=Jalan+Bendahara+Ipoh+Perak+Malaysia" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="display: inline-flex;">
-                Open in Google Maps &nbsp;→
-              </a>
+            </address>
+            <a
+              href="https://maps.google.com/?q=Jalan+Bendahara+Ipoh+Perak+Malaysia"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="location-card__link"
+            >
+              Get Directions &nbsp;→
+            </a>
+          </article>
+
+          <div class="location-accent fade-in fade-in-delay-3" aria-hidden="true">
+            <span class="location-accent__ring"></span>
+            <div class="location-accent__pin">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+              </svg>
             </div>
+            <p class="location-accent__region">Ipoh, Perak</p>
+            <p class="location-accent__country">Malaysia</p>
           </div>
-          <div style="height: 280px; overflow: hidden;">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.3540197816!2d101.07801!3d4.59754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caed5b4b89eabb%3A0x6e80c4c2af3fca44!2sJalan%20Bendahara%2C%20Ipoh%2C%20Perak%2C%20Malaysia!5e0!3m2!1sen!2smy!4v1710000000000"
-              width="100%"
-              height="280"
-              style="border: 0; display: block;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="OPL Synergy location — Jalan Bendahara, Ipoh"
-            ></iframe>
-          </div>
+
         </div>
+
       </div>
     </section>
 
@@ -321,7 +358,7 @@
 
       <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 OPL Synergy Sdn. Bhd. All rights reserved.</p>
-        <p class="footer__copy">Reg. No. &nbsp;·&nbsp; Ipoh, Perak, Malaysia</p>
+        <!--<p class="footer__copy">Reg. No. &nbsp;·&nbsp; Ipoh, Perak, Malaysia</p>-->
       </div>
 
     </div>
