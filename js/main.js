@@ -360,6 +360,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Open on gallery item click
     galleryItems.forEach((item, i) => {
       item.addEventListener('click', () => openLightbox(i));
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(i);
+        }
+      });
     });
 
     // Close button
